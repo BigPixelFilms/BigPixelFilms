@@ -2616,6 +2616,8 @@ input, select, textarea {
 			float: right;
 			margin: 0 0 2rem 2rem;
 			top: 0.75rem;
+			height: 400px;
+			width: 200px;
 		}
 
 		.image.fit {
