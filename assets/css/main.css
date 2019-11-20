@@ -298,7 +298,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ff0000 !important;
+			/* color: #ff0000 !important; */
 		}
 
 	strong, b {
@@ -3285,6 +3285,7 @@ input, select, textarea {
 
 /* Intro */
 
+
 	#intro {
 		color: #ffffff;
 		padding: 8rem 4rem 6rem 4rem ;
@@ -3315,6 +3316,7 @@ input, select, textarea {
 		min-height: 100vh;
 	}
 
+
 		#intro input, #intro select, #intro textarea {
 			color: #ffffff;
 		}
@@ -3327,6 +3329,8 @@ input, select, textarea {
 			#intro a:hover {
 				border-bottom-color: transparent;
 				color: #ff0000 !important;
+				text-shadow:0 0 20px #ff0050;
+				
 			}
 
 		#intro strong, #intro b {
@@ -3335,8 +3339,13 @@ input, select, textarea {
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
 			color: #ffffff;
-		}
+			text-shadow:0 0 20px #ff0050;
+					
+			}
 
+
+
+		
 		#intro blockquote {
 			border-left-color: #ffffff;
 		}
@@ -3508,6 +3517,7 @@ input, select, textarea {
 }
 
 
+
 /* Header */
 
 	#header {
@@ -3595,8 +3605,9 @@ input, select, textarea {
 		}
 
 			#header .logo:hover {
-				border-color: #ff0000 !important;
-				color: #ff0000 !important;
+				border-color: #ffffff !important;
+				color:#ffffff !important;
+				text-shadow:0 0 20px #ff0050;
 			}
 
 		@media screen and (max-width: 980px) {
