@@ -149,6 +149,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		font-family: "Merriweather", Georgia, serif;
+		/* font-family: 'Bad Script', cursive; */
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 2.375;
@@ -181,10 +182,10 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-weight: 900;
+		/*font-family: "Source Sans Pro", Helvetica, sans-serif; */ 
+		font-family: 'Righteous', cursive;
+		font-weight: 50;
 		line-height: 1.5;
-		letter-spacing: 0.075em;
 		text-transform: uppercase;
 		margin: 0 0 1rem 0;
 	}
@@ -198,7 +199,8 @@ input, select, textarea {
 	h1 {
 		font-size: 4rem;
 		line-height: 1.1;
-		margin: 0 0 2rem 0;
+		margin: 0 0 3.15rem 0;
+		
 	}
 
 	h2 {
@@ -238,7 +240,11 @@ input, select, textarea {
 
 	blockquote {
 		border-left: solid 4px;
-		font-style: italic;
+		/*font-style: italic;*/
+		/*font-family: "Courier New", monospace;*/
+		font-family: "Bad Script", cursive;
+		font-weight: 400;
+		letter-spacing: 1px;
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
 	}
@@ -3217,6 +3223,22 @@ input, select, textarea {
 		color: #eeeeee;
 	}
 
+	#myVideo{
+position: fixed;
+right:0;
+bottom:0;
+min-width: 100%;
+min-height: 100%;
+filter:opacity(10%);
+
+
+
+
+
+
+	}
+
+
 /* Wrapper */
 
 	#wrapper {
@@ -3235,8 +3257,9 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
+		/*	background-color: #212931;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+		*/	background-color: #000000;
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3260,12 +3283,13 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background: #1e252d;
+			/*background: #1e252d;
+			*/background: black;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0;
+			opacity: 0 ;
 			position: fixed;
 			top: 0;
 			width: 100%;
@@ -3279,9 +3303,12 @@ input, select, textarea {
 
 			#wrapper > .bg {
 				background-size: auto,								auto,														auto 175%;
+				
 			}
 
 		}
+
+
 
 /* Intro */
 
@@ -3316,6 +3343,13 @@ input, select, textarea {
 		min-height: 100vh;
 	}
 
+	#intro .BackgroundVideo{
+		z-index: -100;
+		width: 100%;
+		height: 100%;
+
+
+	}
 
 		#intro input, #intro select, #intro textarea {
 			color: #ffffff;
@@ -3339,13 +3373,11 @@ input, select, textarea {
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
 			color: #ffffff;
-			text-shadow:0 0 20px #c4c0c0;
+			text-shadow:0 0 10px #ffffff;
 					
 			}
 
-
-
-		
+ 
 		#intro blockquote {
 			border-left-color: #ffffff;
 		}
@@ -3396,16 +3428,15 @@ input, select, textarea {
 					background-color: #ff0000;
 				}
 
-		#intro h1 {
-			font-size: 5rem;
-			line-height: 1;
-		}
+		
+		
 
 		#intro p {
 			font-size: 1.25rem;
 			font-style: italic;
 			margin-top: -0.25rem;
 			text-align: center;
+			letter-spacing: .2rem;
 		}
 
 		#intro + #header {
@@ -3485,9 +3516,10 @@ input, select, textarea {
 			}
 
 				#intro h1 {
-					font-size: 3.25rem;
-					line-height: 1.1;
+					font-size: 2rem;
+					line-height: .1;
 					margin-bottom: 1rem;
+										
 				}
 
 				#intro p {
@@ -3499,7 +3531,22 @@ input, select, textarea {
 					display: none;
 				}
 
+				
+
 		}
+
+
+		/* snowfall */
+
+
+	#snowfall {
+		position:absolute;
+		z-index: -1000;
+		width: 100vw;
+		height: 100vh;
+		;
+
+	}
 /*Video responsive*/
 
 .video-responsive{
@@ -3607,7 +3654,7 @@ input, select, textarea {
 			#header .logo:hover {
 				border-color: #ffffff !important;
 				color:#ffffff !important;
-				text-shadow:0 0 20px #ff0050;
+				text-shadow:0 0 20px #ff0000;
 			}
 
 		@media screen and (max-width: 980px) {
