@@ -104,7 +104,7 @@ particlesJS('snowfall',
         "bubble": {
           "distance": 300,
           "size": 30,
-          "duration": 2,
+          "duration": 1.5,
           "opacity": 1,
           "speed": 5
         },
