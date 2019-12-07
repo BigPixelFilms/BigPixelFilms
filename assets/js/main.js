@@ -6,7 +6,7 @@
 
 (function($) {
 
-	//alert("abc");
+	alert("TEST");
 	setTimeout(function(){
 		$(".eapps-form-inner a").hide();
 	},1000)
