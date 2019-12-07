@@ -6,6 +6,11 @@
 
 (function($) {
 
+	//alert("abc");
+	setTimeout(function(){
+		$(".eapps-form-inner a").hide();
+	},1000)
+
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
