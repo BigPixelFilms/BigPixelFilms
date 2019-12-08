@@ -5,11 +5,8 @@
 */
 
 (function($) {
-
-	alert("TEST");
-	setTimeout(function(){
-		$(".eapps-form-inner a").hide();
-	},1000)
+	
+	setTimeout(function(){$(".eapps-form-inner a").hide();},3000)
 
 	var	$window = $(window),
 		$body = $('body'),
